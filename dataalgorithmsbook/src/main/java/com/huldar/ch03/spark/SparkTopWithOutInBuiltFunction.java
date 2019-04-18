@@ -1,7 +1,6 @@
-package com.huldar.ch02.spark;
+package com.huldar.ch03.spark;
 
 import com.huldar.util.SparkUtil;
-import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
