@@ -45,8 +45,8 @@ public class SparkUtil {
     public static JavaSparkContext createJavaSparkContext(String applicationName)
             throws Exception {
         SparkConf conf = new SparkConf().setAppName(applicationName);
-        JavaSparkContext ctx = new JavaSparkContext(conf);
-        return ctx;
+        conf.setMaster("local[*]");
+        return new JavaSparkContext(conf);
     }
 
     public static String version() {
