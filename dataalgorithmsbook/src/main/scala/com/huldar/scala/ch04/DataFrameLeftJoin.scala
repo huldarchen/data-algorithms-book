@@ -19,6 +19,8 @@ object DataFrameLeftJoin {
     val spark = SparkSession.builder()
       .master("local[*]")
       .appName(DataFrameLeftJoin.getClass.getSimpleName)
+      //.config("spark.default.parallelism", 5)
+      .config("spark.sql.shuffle.partitions", 3)
       .getOrCreate()
     val sc = spark.sparkContext
 
@@ -38,32 +40,35 @@ object DataFrameLeftJoin {
     )
 
     def userRows(line: String): Row = {
-      val tokens = line.split("\t")
+      val tokens = line.split(",")
       Row(tokens(0), tokens(1))
     }
 
     def transactionRows(line: String): Row = {
-      val tokens = line.split("\t")
+      val tokens = line.split(",")
       Row(tokens(0), tokens(1), tokens(2), tokens(3).toInt, tokens(4).toDouble)
     }
 
-    val userRaw = sc.textFile(userInputFile)
-    val userRDDRows = userRaw.filter(_.split("\t").length == 2)
+    val userRaw = sc.textFile(userInputFile, 2)
+    val userRDDRows = userRaw.filter(_.split(",").length == 2)
       .map(userRows)
     val users = spark.createDataFrame(userRDDRows, userScheme)
 
+    users.show()
 
-    val transactionRaw = sc.textFile(transactionInputFile)
-    val transactionRDDRows = transactionRaw.filter(_.split("\t").length == 5)
+    val transactionRaw = sc.textFile(transactionInputFile, 2)
+    val transactionRDDRows = transactionRaw.filter(_.split(",").length == 5)
       .map(transactionRows)
     val transactions = spark.createDataFrame(transactionRDDRows, transactionScheme)
 
+    transactions.show()
+
     val joined = transactions.join(users, transactions("userId") === users("userId"))
 
+    joined.show()
     joined.printSchema()
 
-    val productAndLocation = joined.select(joined.col("productId"),joined.col("location"))
-
+    val productAndLocation = joined.select(joined.col("productId"), joined.col("location"))
     val productAndLocationDistinct = productAndLocation.distinct()
 
     val products = productAndLocationDistinct.groupBy("productId").count()
