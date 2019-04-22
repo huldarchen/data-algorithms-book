@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96412336-bf5a-4442-9da9-611029f999fa" name="Default" comment="fix bug tab分隔符不识别的问题">
+<<<<<<< Updated upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt" afterPath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt" afterPath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/dataalgorithmsbook/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +48,13 @@
       <file leaf-file-name="DataFrameLeftJoin.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="162">
               <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+=======
+            <state relative-caret-position="27">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#689#713#0" expanded="true" />
               </folding>
@@ -728,7 +737,11 @@
       <workItem from="1555927032160" duration="4145000" />
       <workItem from="1555931220634" duration="4437000" />
       <workItem from="1555943807019" duration="928000" />
+<<<<<<< Updated upstream
       <workItem from="1555944780796" duration="948000" />
+=======
+      <workItem from="1555944780796" duration="1133000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="修复代码">
       <created>1555551950723</created>
@@ -776,7 +789,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="60605000" />
+=======
+    <option name="totallyTimeSpent" value="60790000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
@@ -790,10 +807,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53460974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29289544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29289544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1465,8 +1489,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="162">
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+=======
+        <state relative-caret-position="27">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#689#713#0" expanded="true" />
           </folding>
