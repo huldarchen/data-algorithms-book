@@ -34,46 +34,37 @@ public class SparkLeftJoin {
         JavaRDD<String> userLines = javaSparkContext.textFile(userInpuFile, 1);
         JavaRDD<String> transcationsLines = javaSparkContext.textFile(transcationsInputFile, 1);
 
-        JavaPairRDD<String, Tuple2<String, String>> usersRDD = userLines.mapToPair(new PairFunction<String, String, Tuple2<String, String>>() {
-            @Override
-            public Tuple2<String, Tuple2<String, String>> call(String s) throws Exception {
-                String[] tokens = s.split("\t");
-                String userId = tokens[0];
-                String locationId = tokens[1];
-                Tuple2<String, String> location = new Tuple2<>("L", locationId);
-                return new Tuple2<>(userId, location);
-            }
+        JavaPairRDD<String, Tuple2<String, String>> usersRDD = userLines.mapToPair((PairFunction<String, String, Tuple2<String, String>>) s -> {
+            String[] tokens = s.split("\t");
+            String userId = tokens[0];
+            String locationId = tokens[1];
+            Tuple2<String, String> location = new Tuple2<>("L", locationId);
+            return new Tuple2<>(userId, location);
         });
-        JavaPairRDD<String, Tuple2<String, String>> transactionsRDD = transcationsLines.mapToPair(new PairFunction<String, String, Tuple2<String, String>>() {
-            @Override
-            public Tuple2<String, Tuple2<String, String>> call(String s) throws Exception {
-                String[] transactionRecord = s.split("\t");
-                Tuple2<String, String> product = new Tuple2<String, String>("P", transactionRecord[1]);
-                return new Tuple2<String, Tuple2<String, String>>(transactionRecord[2], product);
-            }
+        JavaPairRDD<String, Tuple2<String, String>> transactionsRDD = transcationsLines.mapToPair((PairFunction<String, String, Tuple2<String, String>>) s -> {
+            String[] transactionRecord = s.split("\t");
+            Tuple2<String, String> product = new Tuple2<>("P", transactionRecord[1]);
+            return new Tuple2<>(transactionRecord[2], product);
         });
 
         JavaPairRDD<String, Tuple2<String, String>> allRDD = transactionsRDD.union(usersRDD);
         JavaPairRDD<String, Iterable<Tuple2<String, String>>> groupedRDD = allRDD.groupByKey();
-        JavaPairRDD<String, String> productLocationRDD = groupedRDD.flatMapToPair(new PairFlatMapFunction<Tuple2<String, Iterable<Tuple2<String, String>>>, String, String>() {
-            @Override
-            public Iterator<Tuple2<String, String>> call(Tuple2<String, Iterable<Tuple2<String, String>>> stringIterableTuple2) throws Exception {
-                Iterable<Tuple2<String, String>> pairs = stringIterableTuple2._2;
-                String location = "UNKNOWN";
-                List<String> products = new ArrayList<>();
-                for (Tuple2<String, String> pair : pairs) {
-                    if (pair._1.equals("L")) {
-                        location = pair._2;
-                    } else {
-                        products.add(pair._2);
-                    }
+        JavaPairRDD<String, String> productLocationRDD = groupedRDD.flatMapToPair((PairFlatMapFunction<Tuple2<String, Iterable<Tuple2<String, String>>>, String, String>) stringIterableTuple2 -> {
+            Iterable<Tuple2<String, String>> pairs = stringIterableTuple2._2;
+            String location = "UNKNOWN";
+            List<String> products = new ArrayList<>();
+            for (Tuple2<String, String> pair : pairs) {
+                if (pair._1.equals("L")) {
+                    location = pair._2;
+                } else {
+                    products.add(pair._2);
                 }
-                List<Tuple2<String, String>> kvList = new ArrayList<>();
-                for (String product : products) {
-                    kvList.add(new Tuple2<>(product, location));
-                }
-                return kvList.iterator();
             }
+            List<Tuple2<String, String>> kvList = new ArrayList<>();
+            for (String product : products) {
+                kvList.add(new Tuple2<>(product, location));
+            }
+            return kvList.iterator();
         });
         JavaPairRDD<String, Iterable<String>> productionByLocation = productLocationRDD.groupByKey();
 
@@ -83,16 +74,13 @@ public class SparkLeftJoin {
             System.out.println(tuple._2);
         }
 
-        JavaPairRDD<String, Tuple2<Set<String>, Integer>> productByUniqueLocations = productionByLocation.mapValues(new Function<Iterable<String>, Tuple2<Set<String>, Integer>>() {
-            @Override
-            public Tuple2<Set<String>, Integer> call(Iterable<String> s) throws Exception {
-                Set<String> uniqueLocations = new HashSet<String>();
-                for (String location : s) {
-                    uniqueLocations.add(location);
-                }
-                return new Tuple2<Set<String>, Integer>(uniqueLocations, uniqueLocations.size());
-
+        JavaPairRDD<String, Tuple2<Set<String>, Integer>> productByUniqueLocations = productionByLocation.mapValues((Function<Iterable<String>, Tuple2<Set<String>, Integer>>) s -> {
+            Set<String> uniqueLocations = new HashSet<>();
+            for (String location : s) {
+                uniqueLocations.add(location);
             }
+            return new Tuple2<>(uniqueLocations, uniqueLocations.size());
+
         });
         // debug4
         System.out.println("=== Unique Locations and Counts ===");

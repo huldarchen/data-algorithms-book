@@ -8,9 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://G:/mavenrepository/edu/umd/cloud9/1.3.2/cloud9-1.3.2-sources.jar!/" />
-      <root url="jar://G:/mavenrepository/edu/umd/cloud9/1.3.2/cloud9-1.3.2-sources.jar!/dist" />
-      <root url="jar://G:/mavenrepository/edu/umd/cloud9/1.3.2/cloud9-1.3.2-sources.jar!/integration" />
-      <root url="jar://G:/mavenrepository/edu/umd/cloud9/1.3.2/cloud9-1.3.2-sources.jar!/test" />
     </SOURCES>
   </library>
 </component>
