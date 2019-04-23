@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dataalgorithmsbook/dataalgorithmsbook.iml" filepath="$PROJECT_DIR$/dataalgorithmsbook/dataalgorithmsbook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataalgorithmsbook/data-algorithms.iml" filepath="$PROJECT_DIR$/dataalgorithmsbook/data-algorithms.iml" />
     </modules>
   </component>
 </project>
