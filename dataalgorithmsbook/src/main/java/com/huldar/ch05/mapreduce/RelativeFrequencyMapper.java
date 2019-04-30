@@ -1,4 +1,4 @@
-package com.huldar.ch05;
+package com.huldar.ch05.mapreduce;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.io.IntWritable;

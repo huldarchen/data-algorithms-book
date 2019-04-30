@@ -1,4 +1,4 @@
-package com.huldar.ch05;
+package com.huldar.ch05.mapreduce;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.mapreduce.Reducer;
