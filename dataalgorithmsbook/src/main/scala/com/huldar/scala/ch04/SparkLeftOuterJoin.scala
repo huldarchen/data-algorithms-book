@@ -38,6 +38,8 @@ object SparkLeftOuterJoin {
 
     val joined = userAndProduct join userAndLocation
 
+
+
     val productLocations = joined.values.map(f => (f._1, Option(f._2).getOrElse("unknown")))
     val productByLocation = productLocations.groupByKey()
     val result = productByLocation.map(t => (t._1, t._2.toSet)).map(tuple => (tuple._1, tuple._2.size))

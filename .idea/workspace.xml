@@ -1,22 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c431ec9a-824a-487c-9ee1-344064bd2850" name="Default" comment="ch05 反转排序 MapReduce实现">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/spark/RelativeFrequency.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch06/pojo/SimpleMovingAverage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch06/pojo/SimpleMovingAverageUseArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/test/Test Resource/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/com/huldar/java/MovingAveragePojoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/time/TimeToTimeStemp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="c431ec9a-824a-487c-9ee1-344064bd2850" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_8_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_8_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__in_zapr_druid_druidry_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_connectors_jersey_apache_connector_2_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_inject_jersey_hk2_2_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_json_jackson_2_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/MySparkLisener.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_chuusai_shapeless_2_11_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_chuusai_shapeless_2_11_2_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_clearspring_analytics_stream_2_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_clearspring_analytics_stream_2_7_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_7_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_7_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_6_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_6_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_core_1_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_fommil_netlib_core_1_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_3_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_3_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_rwl_jtransforms_2_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_rwl_jtransforms_2_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jamesmurty_utils_java_xmlbuilder_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jamesmurty_utils_java_xmlbuilder_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_11_0_8_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_2_11_0_8_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_java_0_8_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_java_0_8_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_univocity_univocity_parsers_2_5_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_univocity_univocity_parsers_2_5_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vlkan_flatbuffers_1_2_0_3f79e055.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vlkan_flatbuffers_1_2_0_3f79e055.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__edu_umd_cloud9_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_umd_cloud9_1_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_airlift_aircompressor_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_airlift_aircompressor_0_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_graphite_3_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_graphite_3_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_json_3_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_json_3_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_1_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_17_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_17_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_iharder_base64_2_3_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_iharder_base64_2_3_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_9_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_razorvine_pyrolite_4_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_razorvine_pyrolite_4_13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_py4j_py4j_0_10_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_py4j_py4j_0_10_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_f2j_arpack_combined_all_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_f2j_arpack_combined_all_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_format_0_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_format_0_8_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_memory_0_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_memory_0_8_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_vector_0_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_vector_0_8_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_1_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_1_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_tests_1_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_tests_1_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_mapred_hadoop2_1_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_mapred_hadoop2_1_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_4_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_6_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_6_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_asn1_api_1_0_0_M20.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_asn1_api_1_0_0_M20.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_util_1_0_0_M20.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_util_1_0_0_M20.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_i18n_2_0_0_M15.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_i18n_2_0_0_M15.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_7_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core_3_1_0_incubating.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core_3_1_0_incubating.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ivy_ivy_2_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ivy_ivy_2_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_orc_orc_core_nohive_1_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_orc_orc_core_nohive_1_4_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_orc_orc_mapreduce_nohive_1_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_orc_orc_mapreduce_nohive_1_4_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_column_1_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_column_1_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_common_1_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_common_1_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_encoding_1_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_encoding_1_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_format_2_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_format_2_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_hadoop_1_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_hadoop_1_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_jackson_1_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_jackson_1_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_core_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_graphx_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_graphx_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_kvstore_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_kvstore_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_local_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_mllib_local_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_11_2_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_11_2_3_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_4_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_4_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_52.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_52.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_13.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_3_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_3_0_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_janino_3_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_janino_3_0_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_ast_2_11_3_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_ast_2_11_3_2_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_core_2_11_3_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_core_2_11_3_2_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_jackson_2_11_3_2_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json4s_json4s_jackson_2_11_3_2_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_roaringbitmap_RoaringBitmap_0_5_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_roaringbitmap_RoaringBitmap_0_5_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_11_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_11_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scalap_2_11_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scalap_2_11_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_2_11_0_13_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_2_11_0_13_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_macros_2_11_0_13_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalanlp_breeze_macros_2_11_0_13_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_16.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_16.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_spark_unused_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_spark_unused_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_2_11_0_13_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_2_11_0_13_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_macros_2_11_0_13_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spire_math_spire_macros_2_11_0_13_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_typelevel_machinist_2_11_0_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_typelevel_machinist_2_11_0_6_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_typelevel_macro_compat_2_11_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_typelevel_macro_compat_2_11_1_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_9_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_9_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt" afterPath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt" afterPath="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/pom.xml" afterPath="$PROJECT_DIR$/dataalgorithmsbook/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/OrderInversionPartitioner.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/OrderInversionPartitioner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/PairOfWords.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/PairOfWords.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/RelativeFrequencyCombiner.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/RelativeFrequencyCombiner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/RelativeFrequencyDriver.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/RelativeFrequencyDriver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/RelativeFrequencyMapper.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/RelativeFrequencyMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/RelativeFrequencyReducer.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/RelativeFrequencyReducer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/time/TimeToTimeStemp.java" afterPath="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/time/TimeToTimeStemp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/dataalgorithmsbook/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,109 +208,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TimeToTimeStemp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/time/TimeToTimeStemp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalDateTime.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/time/LocalDateTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44685">
-              <caret line="1812" column="15" lean-forward="false" selection-start-line="1812" selection-start-column="15" selection-end-line="1812" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableAnnotation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo/TableAnnotation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6750">
-              <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateTimeFormatterBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/time/format/DateTimeFormatterBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39366">
-              <caret line="1575" column="17" lean-forward="false" selection-start-line="1575" selection-start-column="17" selection-end-line="1575" selection-end-column="17" />
+            <state relative-caret-position="3289">
+              <caret line="143" column="27" lean-forward="false" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/util/Date.java">
+      <file leaf-file-name="DataFrameLeftJoin.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6264">
-              <caret line="278" column="7" lean-forward="false" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="7" />
+            <state relative-caret-position="-534">
+              <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
               <folding>
-                <element signature="e#10720#10721#0" expanded="true" />
-                <element signature="e#10750#10751#0" expanded="true" />
+                <element signature="e#31#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateFormat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/text/DateFormat.java">
+      <file leaf-file-name="Dataset.scala" pinned="false" current-in-tab="false">
+        <entry file="jar://G:/mavenrepository/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar!/org/apache/spark/sql/Dataset.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2619">
-              <caret line="146" column="35" lean-forward="false" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+            <state relative-caret-position="29578">
+              <caret line="1342" column="59" lean-forward="false" selection-start-line="1342" selection-start-column="59" selection-end-line="1342" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TemporalAccessor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/time/temporal/TemporalAccessor.java">
+      <file leaf-file-name="transactions.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="102" column="17" lean-forward="false" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+            <state relative-caret-position="184">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocalDate.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/time/LocalDate.java">
+      <file leaf-file-name="functions.scala" pinned="false" current-in-tab="false">
+        <entry file="jar://G:/mavenrepository/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar!/org/apache/spark/sql/functions.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="141" column="65" lean-forward="false" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
+            <state relative-caret-position="29210">
+              <caret line="1303" column="6" lean-forward="false" selection-start-line="1303" selection-start-column="6" selection-end-line="1303" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -143,13 +280,20 @@
       <list>
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>6666666666666666666666666666666666666666666666666666666666666666666666t</find>
+      <find>===</find>
+      <find>sql</find>
+      <find>user_id</find>
     </findStrings>
+    <replaceStrings>
+      <replace>userId</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -165,7 +309,6 @@
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/com/huldar/java/StringtEST.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/com/huldar/java/StringTest.java" />
-        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala" />
         <option value="$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1.jar!/org/apache/hadoop/mapreduce/Partitioner.class" />
         <option value="$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.1/hadoop-common-2.7.1.jar!/org/apache/hadoop/io/WritableComparator.class" />
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/OrderInversionPartitioner.java" />
@@ -189,11 +332,23 @@
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/com/huldar/java/MovingAveragePojoTest.java" />
         <option value="$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar!/org/joda/time/DateTime.java" />
         <option value="$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar!/org/joda/time/format/DateTimeFormatter.java" />
-        <option value="$PROJECT_DIR$/dataalgorithmsbook/pom.xml" />
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo/TableAnnotation.java" />
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo/Entity.java" />
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo/ClassEntityTest.java" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/json/JsonTest.java" />
         <option value="$PROJECT_DIR$/dataalgorithmsbook/src/test/java/time/TimeToTimeStemp.java" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/package.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/pom.xml" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/TimeTest.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/Test.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/TEST.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/MySparkLisener.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/CreateDF.scala" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt" />
+        <option value="$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala" />
       </list>
     </option>
   </component>
@@ -204,10 +359,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/deveSoftware/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\deveSoftware\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -217,26 +373,15 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="data-algorithms-book" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="data-algorithms-book" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="data-algorithms-book" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.apache.hadoop:hadoop-client:2.7.1" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-5" />
+    <option name="y" value="1" />
+    <option name="width" value="1546" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -395,7 +540,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -407,6 +552,17 @@
             <path>
               <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="ch04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -435,9 +591,7 @@
               <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="huldar" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
@@ -453,15 +607,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="ch01" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
@@ -472,52 +617,11 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="ch04" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataalgorithmsbook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="time" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-algorithms-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,10 +630,13 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="last_opened_file_path" value="E:/dmall" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\column-study-code\data-algorithms-book\dataalgorithmsbook\src\main\scala\com\huldar\scala\ch04" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\column-study-code\data-algorithms-book\dataalgorithmsbook\src\main" />
       <recent name="E:\column-study-code\data-algorithms-book\dataalgorithmsbook\src" />
@@ -547,15 +654,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TimeToTimeStemp">
-    <configuration name="ClassEntityTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.DataFrameLeftJoin">
+    <configuration name="CreateDF" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="pojo.*" />
+          <option name="PATTERN" value="com.huldar.scala.ch04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="pojo.ClassEntityTest" />
+      <option name="MAIN_CLASS_NAME" value="com.huldar.scala.ch04.CreateDF" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -567,30 +674,16 @@
       <module name="data-algorithms" />
       <envs />
     </configuration>
-    <configuration name="MovingAveragePojoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.huldar.java.MovingAveragePojoTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="data-algorithms" />
-      <envs />
-    </configuration>
-    <configuration name="ReadVsc" type="Application" factoryName="Application" temporary="true">
+    <configuration name="DataFrameLeftJoin" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.huldar.test.*" />
+          <option name="PATTERN" value="com.huldar.scala.ch04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.huldar.test.ReadVsc" />
+      <option name="MAIN_CLASS_NAME" value="com.huldar.scala.ch04.DataFrameLeftJoin" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\huldar\Desktop\push_metric_sql_meta.csv G:\out\text\" />
+      <option name="PROGRAM_PARAMETERS" value="E:\column-study-code\data-algorithms-book\dataalgorithmsbook\data\ch04\users.txt E:\column-study-code\data-algorithms-book\dataalgorithmsbook\data\ch04\transactions.txt E:\column-study-code\data-algorithms-book\dataalgorithmsbook\data\ch04\out\" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -600,14 +693,14 @@
       <module name="data-algorithms" />
       <envs />
     </configuration>
-    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TEST" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.huldar.java.*" />
+          <option name="PATTERN" value="com.huldar.scala.ch04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.huldar.java.StringTest" />
+      <option name="MAIN_CLASS_NAME" value="com.huldar.scala.ch04.TEST" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -619,14 +712,33 @@
       <module name="data-algorithms" />
       <envs />
     </configuration>
-    <configuration name="TimeToTimeStemp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="time.*" />
+          <option name="PATTERN" value="com.huldar.scala.ch04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="time.TimeToTimeStemp" />
+      <option name="MAIN_CLASS_NAME" value="com.huldar.scala.ch04.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="data-algorithms" />
+      <envs />
+    </configuration>
+    <configuration name="TimeTest" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.huldar.scala.ch04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.huldar.scala.ch04.TimeTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -720,19 +832,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.StringTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ReadVsc" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MovingAveragePojoTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TimeToTimeStemp" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ClassEntityTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.DataFrameLeftJoin" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TimeTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TEST" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CreateDF" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TimeToTimeStemp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ClassEntityTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MovingAveragePojoTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ReadVsc" />
-        <item index="4" class="java.lang.String" itemvalue="Application.StringTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.DataFrameLeftJoin" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CreateDF" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TEST" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TimeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -760,7 +872,20 @@
       <workItem from="1556410382551" duration="4711000" />
       <workItem from="1556499778873" duration="2177000" />
       <workItem from="1556512569808" duration="9924000" />
-      <workItem from="1556583652009" duration="202000" />
+      <workItem from="1556583652009" duration="734000" />
+      <workItem from="1556588688252" duration="2463000" />
+      <workItem from="1556610558141" duration="1496000" />
+      <workItem from="1556620849629" duration="510000" />
+      <workItem from="1557105784099" duration="887000" />
+      <workItem from="1557134075808" duration="5178000" />
+      <workItem from="1557188396021" duration="1933000" />
+      <workItem from="1557215196557" duration="1168000" />
+      <workItem from="1557220829848" duration="3065000" />
+      <workItem from="1557274944312" duration="26000" />
+      <workItem from="1557275507258" duration="705000" />
+      <workItem from="1557295032029" duration="1310000" />
+      <workItem from="1557360356544" duration="10522000" />
+      <workItem from="1557449395297" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="ch05 反转排序 MapReduce实现">
       <created>1556412305233</created>
@@ -769,41 +894,48 @@
       <option name="project" value="LOCAL" />
       <updated>1556412305233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ch06 移动平均 java POJO实现">
+      <created>1556583906268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556583906269</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35574000" />
+    <option name="totallyTimeSpent" value="65395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="RestServices" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40967283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27345416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23458445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997155" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32716927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -840,154 +972,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ch05 反转排序 MapReduce实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch05 反转排序 MapReduce实现" />
+    <MESSAGE value="ch06 移动平均 java POJO实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch06 移动平均 java POJO实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="args.length != 1" />
+        <watch expression="args.length != 3" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch04/spark/SparkLeftJoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3051">
-          <caret line="113" column="33" lean-forward="false" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/dataalgorithmsbook.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/data-algorithms.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/com/huldar/java/StringTest.java" />
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch04/spark/SparkLeftJoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="64" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/dataalgorithmsbook.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/data-algorithms.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/com/huldar/java/StringTest.java" />
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1.jar!/org/apache/hadoop/mapreduce/Partitioner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.1/hadoop-mapreduce-client-core-2.7.1-sources.jar!/org/apache/hadoop/mapreduce/Partitioner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-395">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.1/hadoop-common-2.7.1.jar!/org/apache/hadoop/io/WritableComparator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.1/hadoop-common-2.7.1-sources.jar!/org/apache/hadoop/io/WritableComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="155" column="9" lean-forward="true" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.7.1/hadoop-common-2.7.1-sources.jar!/org/apache/hadoop/io/RawComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/scala/com/hudlar/test/ReadCsv.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0.jar!/org/apache/spark/sql/SparkSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="81" column="6" lean-forward="false" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0.jar!/org/apache/spark/sql/SparkSession.class" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/HZ$D.161.008/colors.scheme.xml" />
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/scala/com/huldar/test/ReadVsc.scala" />
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/mapreduce/OrderInversionPartitioner.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1031,20 +1047,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/api/java/function/PairFlatMapFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0.jar!/org/apache/spark/api/java/function/PairFlatMapFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/api/java/function/PairFlatMapFunction.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0.jar!/org/apache/spark/api/java/function/PairFlatMapFunction.class" />
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/java/com/huldar/ch05/spark/RelativeFrequency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3321">
@@ -1056,9 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="36" column="35" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,7 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1053">
           <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,26 +1081,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar!/org/joda/time/format/DateTimeFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2646">
-          <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar!/org/joda/time/DateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="158" column="53" lean-forward="false" selection-start-line="158" selection-start-column="53" selection-end-line="158" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar!/org/joda/time/format/DateTimeFormatter.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar!/org/joda/time/DateTime.java" />
     <entry file="jar://D:/deveSoftware/jdk1.8.0_45/src.zip!/java/time/format/DateTimeFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1112,7 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1107">
           <caret line="102" column="17" lean-forward="false" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2619">
           <caret line="146" column="35" lean-forward="false" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1161">
           <caret line="141" column="65" lean-forward="false" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39366">
           <caret line="1575" column="17" lean-forward="false" selection-start-line="1575" selection-start-column="17" selection-end-line="1575" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,30 +1125,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6264">
           <caret line="278" column="7" lean-forward="false" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="7" />
-          <folding>
-            <element signature="e#10720#10721#0" expanded="true" />
-            <element signature="e#10750#10751#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo.java" />
-    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6750">
-          <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/pojo/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,16 +1154,146 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44685">
           <caret line="1812" column="15" lean-forward="false" selection-start-line="1812" selection-start-column="15" selection-end-line="1812" selection-end-column="15" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/in/zapr/druid/druidry/2.4/druidry-2.4-sources.jar!/in/zapr/druid/druidry/aggregator/DruidAggregator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/HZ$D.023.4226/DruidPipeline.class" />
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-catalyst_2.11/2.3.0/spark-catalyst_2.11-2.3.0-sources.jar!/org/apache/spark/sql/catalyst/parser/SqlBaseParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="1120" column="46" lean-forward="false" selection-start-line="1120" selection-start-column="24" selection-end-line="1120" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/time/TimeToTimeStemp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="265">
+          <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/test/java/json/JsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/rdd/RDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13478">
+          <caret line="628" column="4" lean-forward="false" selection-start-line="628" selection-start-column="4" selection-end-line="628" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar!/org/apache/spark/sql/Column.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="106" column="36" lean-forward="false" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/package.scala" />
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/TimeTest.scala" />
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/scriptFile.scala" />
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/SparkLeftOuterJoin.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar!/org/apache/spark/sql/SparkSession.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6992">
+          <caret line="346" column="35" lean-forward="false" selection-start-line="346" selection-start-column="35" selection-end-line="346" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-catalyst_2.11/2.3.0/spark-catalyst_2.11-2.3.0-sources.jar!/org/apache/spark/sql/Row.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2461">
+          <caret line="127" column="6" lean-forward="false" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/TEST.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/MySparkLisener.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/CreateDF.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3289">
+          <caret line="143" column="27" lean-forward="false" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/data/ch04/users.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/data/ch04/transactions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar!/org/apache/spark/sql/functions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29210">
+          <caret line="1303" column="6" lean-forward="false" selection-start-line="1303" selection-start-column="6" selection-end-line="1303" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/mavenrepository/org/apache/spark/spark-sql_2.11/2.3.0/spark-sql_2.11-2.3.0-sources.jar!/org/apache/spark/sql/Dataset.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29578">
+          <caret line="1342" column="59" lean-forward="false" selection-start-line="1342" selection-start-column="59" selection-end-line="1342" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataalgorithmsbook/src/main/scala/com/huldar/scala/ch04/DataFrameLeftJoin.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-534">
+          <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#31#97#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -37,7 +37,7 @@ public class TimeToTimeStemp {
             System.out.println(parse.getTime());
 
             LocalDateTime endTime = LocalDateTime.now();
-            if (endTime.getMinute() - now.getMinute() == 1) {
+            if (endTime.getMinute() - now.getMinute() == 1000) {
                 System.exit(0);
             }
         }

@@ -3,3 +3,4 @@ u2,GA
 u3,CA
 u4,CA
 u5,GA
+u6,GA
