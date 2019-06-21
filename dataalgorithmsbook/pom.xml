@@ -30,6 +30,17 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-clients_2.11</artifactId>
+                <version>1.4.2</version>
+                <!--<scope>provided</scope>-->
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-streaming-scala_2.11</artifactId>
+                <version>1.4.2</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.spark</groupId>
                 <artifactId>spark-core_${scala.version}</artifactId>
                 <version>${spark.version}</version>
@@ -67,6 +78,17 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-clients_2.11</artifactId>
+            <version>1.4.2</version>
+            <!--<scope>provided</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-scala_2.11</artifactId>
+            <version>1.4.2</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_${scala.version}</artifactId>
