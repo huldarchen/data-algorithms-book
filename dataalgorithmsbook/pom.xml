@@ -24,7 +24,7 @@
         <scala.version>2.11</scala.version>
         <spark.version>2.3.0</spark.version>
         <hadoop.version>2.7.1</hadoop.version>
-        <fastjson.version>1.2.47</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
     <dependencyManagement>
